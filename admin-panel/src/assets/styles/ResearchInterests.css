@@ -1,0 +1,156 @@
+.background {
+  background-color: #0a0d14;
+}
+
+.researchs-container {
+  background-color: #0B0F19;
+  color: #000;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 100px 215px 60px 215px;
+}
+
+.researchs-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: 'Montserrat',sans-serif;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.researchs-title::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 350px;
+  background-color: #4DA8DA;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.research-text-container {
+  background-color: #0a0d14;
+  color: #cbd5e1;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.research-text-container p {
+  font-size: 1.05rem;
+  font-family: 'Inter', sans-serif;
+  text-align: justify;
+  line-height: 1.7;
+  margin-top: 25px;
+}
+
+.research-card {
+  background: #fff;
+  border-radius: 10px;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  padding: 20px 25px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+.research-status-publicated,
+.research-status-submited {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.research-status-publicated {
+  background-color: #c5f5dc;
+  color: #054e3b;
+}
+
+.research-status-submited {
+  background-color: rgb(204, 202, 202);
+  color: gray;
+}
+
+.research-authors {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.research-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 5px 0 10px;
+  color: #111;
+}
+
+.research-description {
+  font-size: 1rem;
+  margin: 0 0 15px;
+  color: #555;
+}
+
+
+/* Tablets */
+@media (max-width: 768px) {
+  .researchs-container {
+    padding: 80px 16px 50px;
+  }
+
+  .researchs-title {
+    font-size: 2rem;
+  }
+
+  .researchs-title::after {
+    width: 200px;
+  }
+
+  .research-card {
+    padding: 20px;
+  }
+
+  .research-title {
+    font-size: 1.3rem;
+  }
+
+  .research-description,
+  .research-text-container p {
+    font-size: 0.95rem;
+  }
+
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  .researchs-title {
+    font-size: 1.7rem;
+  }
+
+  .researchs-title::after {
+    width: 130px;
+  }
+
+  .research-title {
+    font-size: 1.1rem;
+  }
+
+  .research-description,
+  .research-text-container p {
+    font-size: 0.9rem;
+  }
+
+  .research-status-publicated,
+  .research-status-submited {
+    font-size: 0.75rem;
+    top: 10px;
+    right: 10px;
+  }
+
+}

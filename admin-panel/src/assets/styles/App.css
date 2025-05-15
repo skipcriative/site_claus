@@ -1,0 +1,94 @@
+#root {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 100%;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.container {
+  /* width: 100%; */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2 {
+  color: #004c99;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #004c99;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #003366;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  #root {
+    padding: 1.5rem;
+  }
+
+  .container {
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .container {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  button {
+    padding: 8px 10px;
+    font-size: 0.9rem;
+  }
+}

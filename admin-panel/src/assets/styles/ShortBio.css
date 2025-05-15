@@ -1,0 +1,80 @@
+.background {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.shortbio-container {
+  background-color: #121826;
+  color: #cbd5e1;
+  margin: 0 auto;
+  padding: 80px 215px 60px 215px;
+}
+
+/* .text-conteiner{
+  width: 100%;
+} */
+
+.shortbio-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  text-align: left;
+  /* position: relative; */
+}
+
+.shortbio-title::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 180px;
+  background-color: #4DA8DA;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.shortbio-container p {
+  font-size: 1.05rem;
+  font-family: 'Inter',sans-serif;
+  text-align: justify;
+  line-height: 1.7;
+  margin-top: 25px;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .shortbio-container {
+    padding: 80px 16px 50px;
+  }
+
+  .shortbio-title {
+    font-size: 2rem;
+  }
+
+  .shortbio-title::after {
+    width: 120px;
+  }
+
+  .shortbio-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  .shortbio-title {
+    font-size: 1.6rem;
+  }
+
+  .shortbio-title::after {
+    width: 90px;
+  }
+
+  .shortbio-container p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-top: 20px;
+  }
+}

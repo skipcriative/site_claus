@@ -1,0 +1,163 @@
+.background {
+  background-color: #0a0d14;
+}
+
+.publications-container {
+  background-color: #0B0F19;
+  color: #000;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 100px 215px 60px 215px;
+}
+
+.publications-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.publications-title::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 240px;
+  background-color: #4DA8DA;
+  margin-top: 10px;
+  border-radius: 2px;
+}
+
+.publication-card {
+  background: #fff;
+  border-radius: 10px;
+  font-family: 'Inter',sans-serif;
+  text-align: left;
+  padding: 25px 30px;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  margin-top: 20px;
+}
+
+.publication-status-publicated,
+.publication-status-submited {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.publication-status-publicated {
+  background-color: #c5f5dc;
+  color: #054e3b;
+}
+
+.publication-status-submited {
+  background-color: rgb(204, 202, 202);
+  color: gray;
+}
+
+.publication-authors {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: #333;
+  margin-bottom: 0;
+}
+
+.publication-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 5px 0 10px;
+  color: #111;
+}
+
+.publication-description {
+  font-size: 1rem;
+  margin: 0 0 15px;
+  color: #555;
+}
+
+.pdf-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: #0a0d14;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.pdf-button:hover {
+  background-color: #3fa9f5;
+  color: #000;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .publications-container {
+    padding: 80px 16px 50px;
+  }
+
+  .publications-title {
+    font-size: 2rem;
+  }
+
+  .publications-title::after {
+    width: 150px;
+  }
+
+  .publication-card {
+    padding: 20px;
+  }
+
+  .publication-title {
+    font-size: 1.3rem;
+  }
+
+  .publication-description {
+    font-size: 0.95rem;
+  }
+
+  .pdf-button {
+    font-size: 0.95rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 480px) {
+  .publications-title {
+    font-size: 1.7rem;
+  }
+
+  .publications-title::after {
+    width: 100px;
+  }
+
+  .publication-title {
+    font-size: 1.1rem;
+  }
+
+  .publication-description {
+    font-size: 0.9rem;
+  }
+
+  .publication-status-publicated,
+  .publication-status-submited {
+    font-size: 0.75rem;
+    top: 10px;
+    right: 10px;
+  }
+
+  .pdf-button {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+}
